@@ -1,8 +1,8 @@
-class Main:
-    pass
-
 from Cliente import Cliente
 from Conta import Conta
+
+class Main:
+    pass
 
 c1 = Cliente('João', '2199574-7849')
 conta = Conta(c1.nome, 6565, 0)
