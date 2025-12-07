@@ -4,7 +4,9 @@ from Conta import Conta
 class Main:
     pass
 
-c1 = Cliente('João', '2199574-7849')
-conta = Conta(c1.nome, 6565, 0)
+c1 = Cliente('João', '2199999-9999')
+conta = Conta(c1.get_nome(), 1222)
 
-print(f'Conta de {conta.titular}, número {conta.numero} com saldo de {conta.saldo}')
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
